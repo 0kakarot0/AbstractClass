@@ -3,15 +3,16 @@ package animal;
 public class Farm {
 
     public static void main(String[] args) {
-        CowFoodFinder("Cow","Grass");
+        CowFoodFinder("Cow","Grass", "Moo");
     }
 
-    public static void CowFoodFinder(String animalName, String animalFood){
-        Animal animalProperties = new Cow(animalName,animalFood);
+    public static void CowFoodFinder(String animalName, String animalFood, String makeSound){
+        Animal animalProperties = new Cow(animalName,animalFood,makeSound);
         Cow getCow = (Cow) animalProperties;
-        String nameOfAnimal = getCow.getAnimalName();
-        String foodOfAnimal = getCow.getAnimalFood();
-        animalProperties.eat(nameOfAnimal,foodOfAnimal);
-        System.out.println(nameOfAnimal+" make sound " + animalProperties.makeSound("Moo"));
+        String getNameOfAnimal = getCow.getAnimalName();
+        String getFoodOfAnimal = getCow.getAnimalFood();
+        String getMakeSound = getCow.getMakeSound();
+        animalProperties.eat(getNameOfAnimal,getFoodOfAnimal);
+        System.out.println(getNameOfAnimal+" make sound " + getMakeSound);
     }
 }

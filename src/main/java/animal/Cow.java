@@ -30,9 +30,10 @@ public class Cow extends Animal{
         this.animalName = animalName;
     }
 
-    public Cow(String animalName, String animalFood){
+    public Cow(String animalName, String animalFood, String makeSound){
         setAnimalName(animalName);
         setAnimalFood(animalFood);
+        setMakeSound(makeSound);
     }
 
 
